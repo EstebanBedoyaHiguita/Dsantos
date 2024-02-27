@@ -1,0 +1,42 @@
+{
+  "Admin": [],
+  "users": [
+    {
+      "id": "b37f",
+      "name": "Esteban",
+      "email": "bedoya102@hotmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "05e6",
+      "name": "Esteban",
+      "email": "bedoya102@hotmail.com",
+      "password": "1213123"
+    },
+    {
+      "id": "0c2b",
+      "name": "Esteban",
+      "email": "bedoya102@hotmail.com",
+      "password": "riwi2024*"
+    },
+    {
+      "id": "ba11",
+      "name": "Esteban",
+      "email": "bedoya102@hotmail.com",
+      "password": "21313213"
+    },
+    {
+      "id": "8dc3",
+      "name": "Esteban",
+      "email": "bedoya102@hotmail.com",
+      "password": ""
+    },
+    {
+      "id": "f965",
+      "name": "Esteban",
+      "email": "bedoya102@hotmail.com",
+      "password": "1232312"
+    }
+  ],
+  "productos": []
+}
