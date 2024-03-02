@@ -1,5 +1,6 @@
-import { add } from "../apis/fetch.js";
+import { add, get } from "../apis/fetch.js";
 import { PRODUCTOS } from "../apis/url.js";
+import { pintarProducto } from "./dom.js";
 
 const nameProduct = document.getElementById("nameProduct");
 const category = document.getElementById("category");
@@ -11,10 +12,16 @@ const save = document.getElementById("save")
 
 //Eventos
 
+document.addEventListener("DOMContentLoaded",()=>{
+    getProduct()
+})
+
 save.addEventListener("click", (e)=>{
     e.preventDefault()
     
     addProduct()
+
+    
 })
 
 
@@ -30,4 +37,10 @@ async function addProduct (){
         
     }
     await add(PRODUCTOS, newProduct)
+}
+
+
+async function getProduct (){
+    const product = await get (`${PRODUCTOS}`)
+    pintarProducto(product)
 }
