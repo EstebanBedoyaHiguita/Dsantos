@@ -53,14 +53,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .container{
+  
     height: 400px;
     display: flex;
     flex-wrap: nowrap;
-    justify-content: start;
     
+     
     
 
 }
@@ -76,6 +78,7 @@
     align-items: flex-end;
     transition: .6s cubic-bezier(.28,-0.03,0,.99);
     box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+    
     
     
 }
@@ -109,7 +112,7 @@
     height: 80px;
     width: 520px;
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(10px);
     transition-delay: .3s;
     transition: all .3s ease;
     
@@ -129,20 +132,24 @@ input {
 }
 
 input:checked + label {
-    width: 450px;
-    height: 500px;
+    
+    width: 860px;
+    height: 490px;
     
 }
+
 
 input:checked + label .description {
     opacity: 1 !important;
     transform: translateY(0) !important;
 }
 
+
 .card[for="c1"] {
-    background-image: url("../imgs/arabe.webp");
+    background-image: url("../imgs/img1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    
 }
 .card[for="c2"] {
     background-image: url('../imgs/img1.jpg');
