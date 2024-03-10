@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/administrator.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" style="width: 10%; margin: 2%;">
+    Crear Nuevo Producto
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-7 " style="margin-left: 10%;"  id="exampleModalLabel">Agregar Producto</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form  id="submitModal">
+                <div class="inputs">
+                    <label for="nameProduct">Nombre del producto</label>
+                    <input type="text" id="nameProduct">
+                </div>
+                <div class="inputs">
+                    <label for="category">Genero</label>
+                    <select name="categoria" id="category">
+                        <option value="men">Hombre</option>
+                        <option value="woman">Mujer</option>
+                    </select>
+                </div>
+                <div class="inputs">
+                    <label for="price">Precio</label>
+                    <input type="number" id="price">
+                </div>
+                <div class="inputs">
+                    <label for="marca">Marca</label>
+                    <input type="text" id="marca">
+                </div>
+                <div class="inputs">
+                    <label for="imagen">Imagen</label>
+                    <input type="file" name="imagen" id="imagen">
+                  </div>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="save" >Save changes</button>
+                </div>
+
+            </form>
+      </div>
+    </div>
+  </div>
+  <table class="table table-dark table-striped">
+    <tr>
+      <thead>
+        <td>Nombre</td>
+        <td>Genero</td>
+        <td>Precio</td>
+        <td>Marca</td>
+        <td>Imagen</td>
+        <td>Actions</td>
+
+
+
+      </thead>
+      <tbody id="tablaProductos">
+        
+
+      </tbody>
+    </tr>
+  </table>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script type="module" src="../../js/administrator/dom.js"></script>
+    <script type="module" src="../../js/administrator/index.js"></script>
+</body>
+</html>

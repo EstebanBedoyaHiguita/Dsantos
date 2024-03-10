@@ -37,6 +37,32 @@
       "email": "bedoya102@hotmail.com",
       "password": "1232312"
     }
+    
   ],
-  "productos": []
+  "productos": [
+    {
+      "id": "2c27",
+      "name": "Agua de gio",
+      "category": "men",
+      "price": "123",
+      "marca": "no se",
+      "imagen": "C:\\fakepath\\1485969399-twitersocialnetworkbrandlogo_78853.png"
+    },
+    {
+      "id": "2ffb",
+      "name": "Agua de gio",
+      "category": "men",
+      "price": "121332",
+      "marca": "ewre",
+      "imagen": "C:\\fakepath\\1485969399-twitersocialnetworkbrandlogo_78853.png"
+    },
+    {
+      "id": "62a5",
+      "name": "Phanton",
+      "category": "men",
+      "price": "190000",
+      "marca": "Paco Rabanne",
+      "imagen": "C:\\fakepath\\1485969399-twitersocialnetworkbrandlogo_78853.png"
+    }
+  ]
 }

@@ -1,0 +1,77 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: serif;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-content: center; 
+    align-items: center;
+    
+}
+
+/* Modal creacion producto */
+#submitModal{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px; 
+    filter: drop-shadow(
+        0 0 5px rgba(0,0,0, .2)
+    );   
+    color: #EABD00;
+}
+    .modal-content{
+        background-color: rgb(32, 31, 31);
+    }
+    .modal-body{
+        padding: -3%;
+        color: #EABD00;
+
+    }
+    .modal{
+        background: rgb(31,31,34);
+        background: radial-gradient(circle, rgba(31,31,34,1) 0%, rgba(42,42,50,0.9976365546218487) 20%, rgba(60,60,70,1) 48%);
+    }
+    .modal-header  .modal-title{
+        font-size: 50px;
+        
+    }
+
+    .modal-dialog{
+        filter: drop-shadow(
+            0 0 5px rgba(0,0,0, .6)
+        );
+        color: #EABD00;
+    
+    }
+
+    .inputs{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        
+    }
+
+    #imagen{
+        margin-top: 5%;
+    }
+
+/* Tabla productos creados */
+
+.table{
+    width: 80%;
+}
