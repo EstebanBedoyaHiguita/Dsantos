@@ -8,6 +8,8 @@
 body{
     width: 100%;
     height: 100%;
+    background: rgb(9,9,9);
+background: linear-gradient(430deg, rgba(9,9,9,1) 29%, rgba(158,117,16,1) 100%);
 }
 
 
@@ -26,7 +28,7 @@ body{
     position: absolute;
     margin-top: -15%;
     margin-left: 10%;
-    color: darkgoldenrod;
+    color: #b8860b;
     
     font-family: Georgia, 'Times New Roman', Times, serif;
 
@@ -306,3 +308,5 @@ input:checked + label .description {
     .contfinal h6{
         color: darkgoldenrod;
     }
+
+
