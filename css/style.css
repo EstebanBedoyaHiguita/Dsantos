@@ -92,8 +92,8 @@ body{
 }
 
 .container{
-    @media  (max-width: 900px) {
-    width: 80%;
+    @media  (max-width: 600px) {
+    width: 100%;
     /* margin-left: -12%; */
   }
 } 
@@ -187,9 +187,9 @@ input:checked + label {
 
 } */
 input:checked + label {
-    @media  (max-width: 900px) {
-    width: 15700px;
-    height: 380px;
+    @media  (max-width: 650px) {
+    width: 7700px;
+    height: 400px;
     
   }
 
