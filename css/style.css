@@ -327,7 +327,13 @@ input:checked + label .description {
 
 
 /* cards_catalogo */
+
+
+
+    
+
 .cards{
+    margin-top: 10%;
     height: 100%;
     display: flex;
     justify-content: center;
