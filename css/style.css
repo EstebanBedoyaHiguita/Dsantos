@@ -178,14 +178,14 @@ input:checked + label {
   }
 
 } */
-input:checked + label {
+/* input:checked + label {
     @media  (max-width: 1150px) {
     width: 7700px;
     height: 600px;
     
   }
 
-}
+} */
 input:checked + label {
     @media  (max-width: 900px) {
     width: 15700px;
