@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="../../js/tienda-hombre/apptienda.js"></script>
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Tienda</title>
+</head>
+<body>
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#"><img src="../imgs/logo solo en dorado.png" style="width: 30%; height: 20%; border: none;" alt=""></a>
+            </div>
+            <nav id="nav" >
+                <ul>
+                    <li><a href="../src/index.html" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="../tienda/tienda.html" onclick="seleccionar()">HOMBRE</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">MUJERES</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                    <li><a href="#portafolio" onclick="seleccionar()">ADMINISTRADOR</a></li>
+
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+
+    </div>
+    
+    <div class="contenedor" style="margin-top: 5%;">
+        
+        <!-- Contenedor de los elementos -->
+        <div class="contenedor-items">
+            <div class="item">
+                <span class="titulo-item">producto1</span>
+                <img src="../../imgs/hombre/AL HARAMAIN-AMBER OUD GOLD EDITION.jpg.webp" alt="" class="img-item">
+                <span class="precio-item">$150.000</span>
+                <button class="btn-item">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">producto2</span>
+                <img src="../../imgs/hombre/BHARARA BLEU.webp" class="img-item">
+                <span class="precio-item">$160.000</span>
+                <button class="btn-item">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">producto3</span>
+                <img src="../../imgs/hombre/CALVIN KLEIN ONE .jpg.webp" alt="" class="img-item">
+                <span class="precio-item">$170.000</span>
+                <button class="btn-item">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">producto4</span>
+                <img src="../../imgs/hombre/calvin klein-ck in2u for him.jpg.avif" alt="" class="img-item">
+                <span class="precio-item">$180.000</span>
+                <button class="btn-item">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">producto5</span>
+                <img src="../../imgs/hombre/carolina herrera-bad boy.jpg.avif" class="img-item">
+                <span class="precio-item">$190.000</span>
+                <button class="btn-item">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">producto6</span>
+                <img src="../../imgs/hombre/ilmin il ego.webp" alt="" class="img-item">
+                <span class="precio-item">$198.000</span>
+                <button class="btn-item">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">producto7</span>
+                <img src="../../imgs/hombre/invictus -aqua.jpg" alt="" class="img-item">
+                <span class="precio-item">$120.000</span>
+                <button class="btn-item">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Box Engasse</span>
+                <img src="../../imgs/hombre/hugo boss-boss bottled.webp" alt="" class="img-item">
+                <span class="precio-item">$130.000</span>
+                <button class="btn-item">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Box Engasse</span>
+                <img src="../../imgs/hombre/CHANEL ALLURE.jpg" alt="" class="img-item">
+                <span class="precio-item">$150.000</span>
+                <button class="btn-item">Agregar al carrito</button>
+            </div>
+        </div>
+
+        <!-- Carrito de compras -->
+        <div class="carrito">
+            <div class="header-carrito">
+                <h2>Tu Carrito</h2>
+            </div>
+            
+            <div class="carrito-items">
+                <!-- <div class="carrito-item">
+                    <img src="./hombre/AL HARAMAIN-AMBER OUD GOLD EDITION.jpg.webp" alt="" width="80px">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">Box Engasses</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus  restar-cantidad"></i>
+                            <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+
+                        </div>
+                        <span class="carrito-item-precio">$15.000</span>
+                    </div>
+                    <span class="btn-eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                    </span>
+                </div> -->
+                <!-- <div class="carrito-item">
+                    <img src="./hombre/AL HARAMAIN-AMBER OUD GOLD EDITION.jpg.webp" alt="" width="80px">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">Box Engasses</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus  restar-cantidad"></i>
+                            <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+
+                        </div>
+                        <span class="carrito-item-precio">$15.000</span>
+                    </div>
+                    <span class="btn-eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                    </span>
+                </div> -->
+
+                
+            </div>
+            <div class="carrito-total">
+                <div class="fila">
+                    <strong>Tu Total</strong>
+                    <span class="carrito-precio-total">
+                        $ 
+                    </span>
+                    
+                </div>
+                <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
