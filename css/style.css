@@ -708,8 +708,8 @@ input:checked + label {
     
     input:checked + label {
         
-        width: 1500px;
-        height: 400px;
+        width: 5800px;
+        height: 360px;
         background-position: center;
         background-size:contain;
         
