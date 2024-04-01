@@ -708,9 +708,10 @@ input:checked + label {
     
     input:checked + label {
         
-        width: 1200px;
-        height: 500px;
+        width: 1500px;
+        height: 400px;
         background-position: center;
+        background-size:contain;
         
     }
     
