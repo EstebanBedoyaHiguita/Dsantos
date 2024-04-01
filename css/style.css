@@ -709,7 +709,7 @@ input:checked + label {
     input:checked + label {
         
         width: 1200px;
-        height: 400px;
+        height: 500px;
         background-position: center;
         
     }
