@@ -7,6 +7,7 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
+
 /* body{
     position: relative;
     display: flex;
@@ -143,14 +144,14 @@ input:checked + label {
 
 
 .card[for="c1"] {
-    background-image: url("../imgs/img1.jpg");
+    background-image: url("../imgs/hombre/black-xs.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    
     
 }
 .card[for="c2"] {
     background-image: url("../imgs/img1.jpg");
-    background-position: inherit ;
     background-size: cover;
 }
 .card[for="c3"] {
@@ -337,7 +338,7 @@ input:checked + label {
 
 }
 
- .personaje, .personaje_2, .personaje_3 {
+ /* .personaje, .personaje_2, .personaje_3 {
 
     height: 350px;
     width: 300px;
@@ -351,10 +352,10 @@ input:checked + label {
     /* position: absolute; */
 
 
-} 
+
  /* imgenes */
 
-.imagen_personaje{
+/* .imagen_personaje{
     height: 350px;
     width: 250px;
     background-image: url("../imgs/hombre/Ilmin\ -\ IlEgo-caja.jpeg");
@@ -362,10 +363,10 @@ input:checked + label {
     background-repeat: no-repeat;
     margin-bottom: 200px;
     /* transition: 300ms; */
-    filter: drop-shadow(5px -4px 10px #000);
-}
+    /* filter: drop-shadow(5px -4px 10px #000); */
 
-.imagen_personaje_2{
+
+/* .imagen_personaje_2{
     height: 350px;
     width: 250px;
     background-image: url("../imgs/hombre/AlHaramain\ L┬┤Aventure.webp");
@@ -402,15 +403,15 @@ input:checked + label {
     justify-content: center;
     text-align: center;
     gap: 10px;
-    /* display: grid;
+    display: grid;
     grid-template-rows: 1fr 1fr 1fr;
-    transition: 300ms; */
-}
+    transition: 300ms;
+} */
 
 
 /* hover */
 
-.car :hover .imagen_personaje{
+/* .car :hover .imagen_personaje{
     transform: translateY(-40px);
     transition: 300ms;
     filter: none;
@@ -431,7 +432,7 @@ input:checked + label {
     transition: 300ms;
     filter: none;
     background-image: url("../imgs/hombre/BHARARA\ BLEU.webp");
-}
+}  */
 
 
 /* Response menu  */
@@ -449,6 +450,7 @@ input:checked + label {
         top: 75px;
         background-color: #252a2e;
         width: 180px;
+        
 
     }
     nav.responsive ul{
@@ -458,15 +460,21 @@ input:checked + label {
         border-bottom: 1px solid #fff;
         padding: 10px 0;
     }
+    .contenedor-header header{
+        height: 80px;
+    }
+    
 }
+
 
 /* TIENDA  */
 
 .contenedor{
+    margin-top: 7%;
 
     max-width: 100%;
     padding: 10px;
-    margin: auto;
+    /* margin-top: 70px; */
     display: flex;
     justify-content: space-between; 
     /* oculto lo que queda fuera del contenedor */
@@ -484,7 +492,7 @@ input:checked + label {
  
  .contenedor .contenedor-items .item{
     
-     max-width: 200px;
+     max-width: 100%;
      padding: 10px;
      margin: auto;
      border: 1px solid #666;
@@ -504,11 +512,13 @@ input:checked + label {
  .contenedor-items .item .img-item{
      width: 100%;
      height: 150px;
+     filter: brightness(80%);
  
  }
  
  .contenedor-items .item .titulo-item{
-     display: block;
+     display: flex;
+     flex-direction: column;
      font-weight: bold;
      text-align: center;
      text-transform: uppercase;
@@ -516,7 +526,7 @@ input:checked + label {
  }
  
  .contenedor-items .item .precio-item{
-     display: block;
+     width: 100%;
      text-align: center;
      font-weight: bold;
      font-size: 22px;
@@ -533,6 +543,19 @@ input:checked + label {
      border-radius: 5px;
      cursor: pointer;
  
+ }
+
+ .item .btn-warning{
+    margin-top: 8px;
+    width: 100%;
+    height: 30px;
+    border-radius: 8px;
+    
+
+ }
+ .item .btn-warning a{
+    text-decoration: none;
+    color: #b8860b;
  }
  
  /* Seccion carrito */
@@ -672,6 +695,31 @@ input:checked + label {
  }
  
  /* Seccion responsive */
+
+ @media (max-width:507px){
+    .inicio{
+        background: linear-gradient(to top, rgba(30,35,38,.1), rgba(30,35,38,1)),
+        url("../imgs/Mockuo\ Banner.jpg");
+        background-size: contain;
+        height: 100vh;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        margin-top: 10%;
+    }
+    .contenido-banner{
+        position: absolute;
+        margin-top: -5%;
+        
+    }
+    .contenido-banner h6{
+        display: none;
+    }
+    /* .inicio{
+        top: -10%;
+        height: 300px;
+    } */
+ }
  @media screen and (max-width:850px) {
      .contenedor{
          display: block;
@@ -712,6 +760,14 @@ input:checked + label {
         height: 360px;
         background-position: center;
         background-size:contain;
+        
+    }
+    .inicio{
+        background: linear-gradient(to top, rgba(30,35,38,.1), rgba(30,35,38,1)),
+        url("../imgs/Mockuo\ Banner.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 500px;
         
     }
     

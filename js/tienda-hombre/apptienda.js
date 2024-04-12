@@ -84,6 +84,8 @@ function actualizarTotalCarrito(){
 
     }
     total = Math.round(total*100)/100;
+
+    console.log(total);
     document.getElementsByClassName('carrito-precio-total')[0].innerText =  total;
 }
 
@@ -137,13 +139,15 @@ function agregarAlCarritoClicked(e){
     console.log(titulo);
     let precio = item.getElementsByClassName('precio-item')[0].innerText;
     let imagen = item.getElementsByClassName('img-item')[0].src;
-    console.log(imagen);
+
 
     //funcion agregar el elemento al carrioto, le mando por parametros los valores
 
     agregarItemCarrito (titulo,precio,imagen);
     //hacemos visible el carrito cuando agrega por primera vez
     hacerVisibleCarrito();
+
+    actualizarTotalCarrito()
 
 }
 
