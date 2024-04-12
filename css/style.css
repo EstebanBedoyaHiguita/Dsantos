@@ -705,11 +705,12 @@ input:checked + label {
         color: #fff;
         display: flex;
         align-items: center;
-        margin-top: 10%;
+        margin-top: 6%;
     }
     .contenido-banner{
         position: absolute;
-        margin-top: -5%;
+        margin-top: 40%;
+        
         
     }
     /* .contenido-banner h6{
@@ -765,13 +766,20 @@ input:checked + label {
     .inicio{
         background: linear-gradient(to top, rgba(30,35,38,.1), rgba(30,35,38,1)),
         url("../imgs/Mockuo\ Banner.jpg");
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
-        height: 500px;
+        background-position: center;
+        height: 300px;
         
     }
     
+    
 }
+
+
+
+
+
  
  
  
