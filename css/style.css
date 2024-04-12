@@ -706,10 +706,11 @@ input:checked + label {
         display: flex;
         align-items: center;
         margin-top: 6%;
+        
     }
     .contenido-banner{
         position: absolute;
-        margin-top: 40%;
+        margin-top: 50%;
         
         
     }
