@@ -411,7 +411,7 @@ input:checked + label {
             transform: translateX(0);
         }
         to {
-            transform: translateX(-135%);
+            transform: translateX(-115%);
         }
         0%{
             opacity: 3%;
