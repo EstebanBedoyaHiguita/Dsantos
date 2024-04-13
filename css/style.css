@@ -143,38 +143,329 @@ input:checked + label {
 }
 
 
-.card[for="c1"] {
-    background-image: url("../imgs/hombre/black-xs.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-    
-}
-.card[for="c2"] {
-    background-image: url("../imgs/img1.jpg");
-    background-size: cover;
-}
-.card[for="c3"] {
-    background-image: url("../imgs/img1.jpg");
-    background-size: cover;
-    
-}
-.card[for="c4"] {
-    background-image: url("../imgs/img1.jpg");
-    background-size: cover;
-}
-.card[for="c5"] {
-    background-image: url("../imgs/img1.jpg");
-    background-size: cover;
-}
-.card[for="c6"] {
-    background-image: url("../imgs/img1.jpg");
+/* lociones banner principal */
 
-    background-size: cover;
+.container-imagenes{
+    width: 100%;
+    height: 500px;
 }
-.card[for="c7"] {
-    background-image: url("../imgs/img1.jpg");
-    background-size: cover;
+
+.tarjetas{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5%;
+    gap: 15px;
+}
+
+.tarjetas img{
+    width: 300px;
+    height: 400px;
+    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+}
+
+#img1{
+    animation: mover_img1;
+    animation-duration: 4s;
+    animation-fill-mode: both;
+    
+    
+}
+#img2{
+    animation: mover_img2;
+    animation-duration: 4s;
+    animation-fill-mode: both;
+    
+}
+#img3{
+    animation: mover_img3;
+    animation-duration: 4s;
+    animation-fill-mode: both;
+    
+}
+#img4{
+    animation: mover_img4;
+    animation-duration: 4s;
+    animation-fill-mode: both;
+    
+}
+
+@keyframes mover_img1{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(210%);
+    }
+    0%{
+        opacity: 3%;
+        scale: 2%;
+    }
+    25%{
+        opacity: 30%;
+        scale: 20%;
+    }
+    50%{
+        opacity: 50%;
+        scale: 50%;
+    }
+    75%{
+        opacity: 70%;
+        scale: 70%;
+    }
+    100%{
+        opacity: 100%;
+        scale: 100%;
+    }
+}
+@keyframes mover_img2{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(210%);
+    }
+    0%{
+        opacity: 3%;
+        scale: 2%;
+    }
+    25%{
+        opacity: 30%;
+        scale: 20%;
+    }
+    50%{
+        opacity: 50%;
+        scale: 50%;
+    }
+    75%{
+        opacity: 70%;
+        scale: 70%;
+    }
+    100%{
+        opacity: 100%;
+        scale: 100%;
+    }
+}
+@keyframes mover_img3{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-210%);
+    }
+    0%{
+        opacity: 3%;
+        scale: 2%;
+    }
+    25%{
+        opacity: 30%;
+        scale: 20%;
+    }
+    50%{
+        opacity: 50%;
+        scale: 50%;
+    }
+    75%{
+        opacity: 70%;
+        scale: 70%;
+    }
+    100%{
+        opacity: 100%;
+        scale: 100%;
+    }
+}
+@keyframes mover_img4{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-210%);
+    }
+    0%{
+        opacity: 3%;
+        scale: 2%;
+    }
+    25%{
+        opacity: 30%;
+        scale: 20%;
+    }
+    50%{
+        opacity: 50%;
+        scale: 50%;
+    }
+    75%{
+        opacity: 70%;
+        scale: 70%;
+    }
+    100%{
+        opacity: 100%;
+        scale: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-imagenes{
+        width: 100%;
+        height: 250px;
+    }
+    
+    .tarjetas{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 5%;
+        gap: 15px;
+    }
+
+    .tarjetas img{
+        width: 120px;
+        height: 180px;
+        box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+        
+    }
+
+    #img1 {
+        animation: mover_img1_mobile 4s forwards;
+        object-fit: cover;
+        
+    }
+
+     #img2 {
+        animation: mover_img2_mobile 4s forwards;
+        display: none;
+    }
+
+    #img3 {
+        animation: mover_img3_mobile 4s forwards;
+        object-fit: cover;
+    }
+    #img4{
+        animation: mover_img4_mobile 4s forwards;
+        object-fit: cover;
+    }
+
+    @keyframes mover_img1_mobile {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(240%);
+        }
+        0%{
+            opacity: 3%;
+            scale: 2%;
+        }
+        25%{
+            opacity: 30%;
+            scale: 20%;
+        }
+        50%{
+            opacity: 50%;
+            scale: 50%;
+        }
+        75%{
+            opacity: 70%;
+            scale: 70%;
+        }
+        100%{
+            opacity: 100%;
+            scale: 100%;
+        }
+    }
+
+    @keyframes mover_img2_mobile {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-120%);
+        }
+        0%{
+            opacity: 3%;
+            scale: 2%;
+        }
+        25%{
+            opacity: 30%;
+            scale: 20%;
+        }
+        50%{
+            opacity: 50%;
+            scale: 50%;
+        }
+        75%{
+            opacity: 70%;
+            scale: 70%;
+        }
+        100%{
+            opacity: 100%;
+            scale: 100%;
+        }
+    }
+
+    @keyframes mover_img3_mobile {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-125%);
+        }
+        0%{
+            opacity: 3%;
+            scale: 2%;
+        }
+        25%{
+            opacity: 30%;
+            scale: 20%;
+        }
+        50%{
+            opacity: 50%;
+            scale: 50%;
+        }
+        75%{
+            opacity: 70%;
+            scale: 70%;
+        }
+        100%{
+            opacity: 100%;
+            scale: 100%;
+        }
+    }
+
+    @keyframes mover_img4_mobile {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-125%);
+        }
+        0%{
+            opacity: 3%;
+            scale: 2%;
+        }
+        25%{
+            opacity: 30%;
+            scale: 20%;
+        }
+        50%{
+            opacity: 50%;
+            scale: 50%;
+        }
+        75%{
+            opacity: 70%;
+            scale: 70%;
+        }
+        100%{
+            opacity: 100%;
+            scale: 100%;
+        }
+    }
+
+    
+    
 }
 
 /* Seccion hombre */
@@ -437,6 +728,28 @@ input:checked + label {
 
 /* Response menu  */
 @media screen and (max-width:980px){
+
+    .container-imagenes{
+        width: 100%;
+        height: 250px;
+    }
+    
+    .tarjetas{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 5%;
+        gap: 15px;
+    }
+
+    .tarjetas img{
+        width: 120px;
+        height: 180px;
+        box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+        
+    }
     nav{
         display: none;
     }
