@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Tac+One&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Tac+One&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Rakkas&display=swap');
 
 *{
     margin: 0%;
@@ -66,6 +67,23 @@
     border-radius: 5px;
     cursor: pointer;
     display: none;
+}
+
+.contenido-banner{
+    margin: 5%;
+}
+
+.contenido-banner h1{
+    color: #fff;
+  text-shadow:
+      0 0 7px #e0d0d0,
+      0 0 10px #e0d0d0,
+      0 0 20px #e0d0d0,
+      0 0 22px rgb(229, 255, 0),
+      0 0 22px rgb(229, 255, 0),
+      0 0 30px rgb(229, 255, 0),
+      0 0 30px rgb(229, 255, 0),
+      0 0 21px rgb(229, 255, 0);
 }
 
 /* SECCION INICIO */
@@ -411,7 +429,7 @@ input:checked + label {
             transform: translateX(0);
         }
         to {
-            transform: translateX(-100%);
+            transform: translateX(-105%);
         }
         0%{
             opacity: 3%;
@@ -474,25 +492,33 @@ input:checked + label {
    
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: end;
+    padding: 5%;
     width: 100%;
     height:500px;
-    background-image: url("../imgs/fondohombreok.webp");
+    background-image: url("../imgs/como-hacer-que-el-perfume-dure-mas-en-tu-piel-botellas.webp");
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    backdrop-filter: opacity(80%);
+    
     
 }
 
     .SeccionH h5{
-        margin-left: 3%;
+        
+        /* margin-left: 3%; */
         text-align: center;
-        width: 90%;
-        color: black;
+        width: 40%;
+        color: white;
+        font-family: "Pacifico", cursive;
+        font-weight: 400;
+        font-style: normal;
+        
                 
     }
     .SeccionH h2{
         text-align: center;
+        width: 40%;
         color: darkgoldenrod;
                 
     }
